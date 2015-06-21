@@ -1,0 +1,60 @@
+{
+  "Name": 1,
+  "Capacity": {
+    "Network": 1000,
+    "VM": 6
+  },
+  "Costs": [
+    {
+      "Ingress": 1,
+      "Cost":3
+    }
+  ],
+  "Racks": [
+    {
+      "Servers": [
+        {
+          "VMs": 2,
+          "Name": 0,
+          "RackNum": 1
+        },
+        {
+          "VMs": 2,
+          "Name": 1,
+          "RackNum": 1
+        }
+      ],
+      "Name": 1
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 2,
+          "Name": 0,
+          "RackNum": 2
+        },
+        {
+          "VMs": 0,
+          "Name": 1,
+          "RackNum": 2
+        }
+      ],
+      "Name": 2
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 0,
+          "Name": 0,
+          "RackNum": 3
+        },
+        {
+          "VMs": 0,
+          "Name": 1,
+          "RackNum": 3
+        }
+      ],
+      "Name": 3
+    }
+  ]
+}

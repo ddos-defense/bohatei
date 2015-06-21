@@ -1,0 +1,386 @@
+{
+  "Name": 25,
+  "Capacity": {
+    "Network": 1000,
+    "VM": 40
+  },
+  "Costs": [
+    {
+      "Ingress": 1,
+      "Cost": 99
+    },
+    {
+      "Ingress": 2,
+      "Cost": 56
+    },
+    {
+      "Ingress": 3,
+      "Cost": 13
+    },
+    {
+      "Ingress": 4,
+      "Cost": 81
+    },
+    {
+      "Ingress": 5,
+      "Cost": 53
+    },
+    {
+      "Ingress": 6,
+      "Cost": 65
+    },
+    {
+      "Ingress": 7,
+      "Cost": 63
+    },
+    {
+      "Ingress": 8,
+      "Cost": 73
+    },
+    {
+      "Ingress": 9,
+      "Cost": 93
+    },
+    {
+      "Ingress": 10,
+      "Cost": 13
+    },
+    {
+      "Ingress": 11,
+      "Cost": 59
+    },
+    {
+      "Ingress": 12,
+      "Cost": 5
+    },
+    {
+      "Ingress": 13,
+      "Cost": 53
+    },
+    {
+      "Ingress": 14,
+      "Cost": 1
+    },
+    {
+      "Ingress": 15,
+      "Cost": 0
+    },
+    {
+      "Ingress": 16,
+      "Cost": 93
+    },
+    {
+      "Ingress": 17,
+      "Cost": 17
+    },
+    {
+      "Ingress": 18,
+      "Cost": 93
+    },
+    {
+      "Ingress": 19,
+      "Cost": 60
+    },
+    {
+      "Ingress": 20,
+      "Cost": 81
+    },
+    {
+      "Ingress": 21,
+      "Cost": 77
+    },
+    {
+      "Ingress": 22,
+      "Cost": 59
+    },
+    {
+      "Ingress": 23,
+      "Cost": 74
+    },
+    {
+      "Ingress": 24,
+      "Cost": 4
+    },
+    {
+      "Ingress": 25,
+      "Cost": 65
+    },
+    {
+      "Ingress": 26,
+      "Cost": 29
+    },
+    {
+      "Ingress": 27,
+      "Cost": 31
+    },
+    {
+      "Ingress": 28,
+      "Cost": 20
+    },
+    {
+      "Ingress": 29,
+      "Cost": 73
+    },
+    {
+      "Ingress": 30,
+      "Cost": 85
+    },
+    {
+      "Ingress": 31,
+      "Cost": 93
+    },
+    {
+      "Ingress": 32,
+      "Cost": 50
+    },
+    {
+      "Ingress": 33,
+      "Cost": 12
+    },
+    {
+      "Ingress": 34,
+      "Cost": 31
+    },
+    {
+      "Ingress": 35,
+      "Cost": 29
+    },
+    {
+      "Ingress": 36,
+      "Cost": 68
+    },
+    {
+      "Ingress": 37,
+      "Cost": 87
+    },
+    {
+      "Ingress": 38,
+      "Cost": 18
+    },
+    {
+      "Ingress": 39,
+      "Cost": 40
+    },
+    {
+      "Ingress": 40,
+      "Cost": 64
+    },
+    {
+      "Ingress": 41,
+      "Cost": 34
+    },
+    {
+      "Ingress": 42,
+      "Cost": 17
+    },
+    {
+      "Ingress": 43,
+      "Cost": 59
+    },
+    {
+      "Ingress": 44,
+      "Cost": 38
+    },
+    {
+      "Ingress": 45,
+      "Cost": 65
+    },
+    {
+      "Ingress": 46,
+      "Cost": 34
+    },
+    {
+      "Ingress": 47,
+      "Cost": 89
+    },
+    {
+      "Ingress": 48,
+      "Cost": 98
+    },
+    {
+      "Ingress": 49,
+      "Cost": 95
+    },
+    {
+      "Ingress": 50,
+      "Cost": 89
+    },
+    {
+      "Ingress": 51,
+      "Cost": 55
+    },
+    {
+      "Ingress": 52,
+      "Cost": 17
+    },
+    {
+      "Ingress": 53,
+      "Cost": 91
+    },
+    {
+      "Ingress": 54,
+      "Cost": 15
+    },
+    {
+      "Ingress": 55,
+      "Cost": 16
+    },
+    {
+      "Ingress": 56,
+      "Cost": 92
+    },
+    {
+      "Ingress": 57,
+      "Cost": 18
+    },
+    {
+      "Ingress": 58,
+      "Cost": 40
+    },
+    {
+      "Ingress": 59,
+      "Cost": 39
+    },
+    {
+      "Ingress": 60,
+      "Cost": 34
+    },
+    {
+      "Ingress": 61,
+      "Cost": 73
+    },
+    {
+      "Ingress": 62,
+      "Cost": 99
+    },
+    {
+      "Ingress": 63,
+      "Cost": 35
+    },
+    {
+      "Ingress": 64,
+      "Cost": 39
+    },
+    {
+      "Ingress": 65,
+      "Cost": 67
+    },
+    {
+      "Ingress": 66,
+      "Cost": 29
+    },
+    {
+      "Ingress": 67,
+      "Cost": 8
+    },
+    {
+      "Ingress": 68,
+      "Cost": 79
+    },
+    {
+      "Ingress": 69,
+      "Cost": 35
+    },
+    {
+      "Ingress": 70,
+      "Cost": 21
+    },
+    {
+      "Ingress": 71,
+      "Cost": 7
+    },
+    {
+      "Ingress": 72,
+      "Cost": 9
+    },
+    {
+      "Ingress": 73,
+      "Cost": 20
+    },
+    {
+      "Ingress": 74,
+      "Cost": 31
+    },
+    {
+      "Ingress": 75,
+      "Cost": 11
+    },
+    {
+      "Ingress": 76,
+      "Cost": 71
+    },
+    {
+      "Ingress": 77,
+      "Cost": 11
+    },
+    {
+      "Ingress": 78,
+      "Cost": 48
+    },
+    {
+      "Ingress": 79,
+      "Cost": 2
+    },
+    {
+      "Ingress": 80,
+      "Cost": 8
+    }
+  ],
+  "Racks": [
+    {
+      "Servers": [
+        {
+          "VMs": 10,
+          "Name": 0,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 1,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 2,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 3,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 4,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 5,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 6,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 7,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 8,
+          "RackNum": 1
+        },
+        {
+          "VMs": 0,
+          "Name": 9,
+          "RackNum": 1
+        }
+      ],
+      "Name": 1
+    }
+  ]
+}

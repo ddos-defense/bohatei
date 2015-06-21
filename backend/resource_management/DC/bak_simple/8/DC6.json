@@ -1,0 +1,151 @@
+{
+  "Name": 6,
+  "Capacity": {
+    "Network": 1000,
+    "VM": 200
+  },
+  "Costs": [
+    {
+      "Ingress": 1,
+      "Cost": 62
+    },
+    {
+      "Ingress": 2,
+      "Cost": 79
+    },
+    {
+      "Ingress": 3,
+      "Cost": 17
+    },
+    {
+      "Ingress": 4,
+      "Cost": 26
+    },
+    {
+      "Ingress": 5,
+      "Cost": 89
+    }
+  ],
+  "Racks": [
+    {
+      "Servers": [
+        {
+          "VMs": 10,
+          "Name": 0,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 1,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 2,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 3,
+          "RackNum": 1
+        },
+        {
+          "VMs": 10,
+          "Name": 4,
+          "RackNum": 1
+        }
+      ],
+      "Name": 1
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 10,
+          "Name": 0,
+          "RackNum": 2
+        },
+        {
+          "VMs": 10,
+          "Name": 1,
+          "RackNum": 2
+        },
+        {
+          "VMs": 10,
+          "Name": 2,
+          "RackNum": 2
+        },
+        {
+          "VMs": 10,
+          "Name": 3,
+          "RackNum": 2
+        },
+        {
+          "VMs": 10,
+          "Name": 4,
+          "RackNum": 2
+        }
+      ],
+      "Name": 2
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 10,
+          "Name": 0,
+          "RackNum": 3
+        },
+        {
+          "VMs": 10,
+          "Name": 1,
+          "RackNum": 3
+        },
+        {
+          "VMs": 10,
+          "Name": 2,
+          "RackNum": 3
+        },
+        {
+          "VMs": 10,
+          "Name": 3,
+          "RackNum": 3
+        },
+        {
+          "VMs": 10,
+          "Name": 4,
+          "RackNum": 3
+        }
+      ],
+      "Name": 3
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 10,
+          "Name": 0,
+          "RackNum": 4
+        },
+        {
+          "VMs": 10,
+          "Name": 1,
+          "RackNum": 4
+        },
+        {
+          "VMs": 10,
+          "Name": 2,
+          "RackNum": 4
+        },
+        {
+          "VMs": 10,
+          "Name": 3,
+          "RackNum": 4
+        },
+        {
+          "VMs": 10,
+          "Name": 4,
+          "RackNum": 4
+        }
+      ],
+      "Name": 4
+    }
+  ]
+}

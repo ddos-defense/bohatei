@@ -1,0 +1,35 @@
+{
+  "Name": 1,
+  "Capacity": {
+    "Network": 1000,
+    "VM": 8
+  },
+  "Costs": [
+    {
+      "Ingress": 1,
+      "Cost":3
+    }
+  ],
+  "Racks": [
+    {
+      "Servers": [
+        {
+          "VMs": 4,
+          "Name": 0,
+          "RackNum": 1
+        }
+      ],
+      "Name": 1
+    },
+    {
+      "Servers": [
+        {
+          "VMs": 4,
+          "Name": 0,
+          "RackNum": 2
+        }
+      ],
+      "Name": 2
+    }
+  ]
+}
