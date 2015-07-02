@@ -1,0 +1,28 @@
+<script type="text/template" id="devicescontainer">
+<div id="deviceDiv" style="margin-left:20px; float: left;">
+    <h3>Devices</h3>
+    <table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+        <th>Node ID</th>
+        <th>Type</th>
+        <th>Properties</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% _.each(devices, function(device) { %>
+        <tr data-nodeType="<%= device.node.type%>" data-nodeId="<%= device.node.id%>" style="cursor:pointer;">
+            <td><%= device.node.id %></td>
+            <td><%= device.node.type %></td>
+            <td>
+                <div>Mac Address: <%= device.properties.macAddress.value %></div>
+                <div>Description: <%= device.properties.description.value %></div>
+                <div>Mac Address: <%= device.properties.macAddress.value %></div>
+            </td>
+        </tr>
+    <% }); %>
+    </tbody>
+    </table>
+
+</div>
+</script>

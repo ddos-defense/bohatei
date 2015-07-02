@@ -1,0 +1,65 @@
+body {
+  margin-top: 25px;
+}
+
+#phoenix-overlay {
+  font-size: 0.7em;
+  position: absolute;
+  height: 25px;
+  top: -25px;
+  right: 0;
+  left: 0;
+  -webkit-transition: -webkit-top 1s;
+  transition: top 1s;
+  box-shadow: 0 0 10px #646464;
+}
+
+#phoenix-overlay:hover {
+  top: 0;
+}
+
+#phoenix-brand {
+  width: 150px;
+  height: 45px;
+  background: url('/img/opendaylight.png') bottom center no-repeat #ddd;
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 100;
+  box-shadow: 0 0 10px #646464;
+}
+
+#phoenix-menu {
+  width: 100%;
+  height: 25px;
+  display: block;
+  position: relative;
+  text-align: left;
+  background-image: linear-gradient(to bottom, #eee, #ddd);
+  z-index: 101;
+  text-shadow: #bbb 0 0 2px;
+}
+
+#phoenix-menu > ul > li > a {
+  padding: 0 10px;
+  border-radius: 0 0 2px 2px;
+}
+
+#phoenix-menu > ul > li > a:hover {
+  background: #ccc;
+}
+
+#phoenix-menu > ul > .pure-menu-selected {
+}
+
+#phoenix-menu > ul > .pure-menu-selected:hover {
+}
+
+#phoenix-menu > ul > .pure-menu-selected > a {
+  cursor: default;
+}
+
+#phoenix-menu > ul > .pure-menu-selected > a:hover {
+  background: transparent;
+}

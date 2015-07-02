@@ -1,0 +1,9 @@
+!SESSION 2014-09-10 15:56:42.745 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -console -consoleLog
+
+!ENTRY org.eclipse.osgi 4 0 2014-09-10 15:56:43.593
+!MESSAGE Bundle reference:file:../lib/logging.bridge-0.4.1-SNAPSHOT@1:start not found.

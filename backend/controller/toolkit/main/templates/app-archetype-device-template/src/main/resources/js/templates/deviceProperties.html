@@ -1,0 +1,33 @@
+<script type="text/template">
+<div id="deviceProperties" style="float: left; margin-left: 20px;">
+	<h3>Device Properties - <%=nodeId %></h3>
+	<table class="pure-table pure-table-bordered">
+		<thead>
+			<tr>
+				<th>Property Name</th>
+				<th>Property Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% _.each(deviceProps, function(prop) { %>
+				<tr>
+					<td>Bandwidth</td>
+					<td><%= prop.properties.bandwidth ? prop.properties.bandwidth.value : '' %></td>
+				</tr>
+				<tr>
+					<td>config</td>
+					<td><%= prop.properties.config.value%></td>
+				</tr>
+				<tr>
+					<td>name</td>
+					<td><%= prop.properties.name.value%></td>
+				</tr>
+				<tr>
+					<td>state</td>
+					<td><%= prop.properties.state.value%></td>
+				</tr>
+			<% }); %>
+		</tbody>
+	</table>
+</div>
+</script>

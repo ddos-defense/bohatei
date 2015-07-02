@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1395870158672
+Build-Jdk: 1.7.0_51
+Built-By: Luis
+Bundle-Activator: org.sdnhub.atf.internal.Activator
+Bundle-ManifestVersion: 2
+Bundle-Name: atf
+Bundle-SymbolicName: org.opendaylight.phoenix.atf
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: org.opendaylight.controller.sal.core;version="[0.8,1)",o
+ rg.opendaylight.controller.sal.packet;version="[0.8,1)",org.slf4j;versi
+ on="[1.7,2)",org.apache.felix.dm;version="[3.0,4)",org.opendaylight.con
+ troller.hosttracker.hostAware,org.opendaylight.controller.sal.inventory
+ ;version="[0.8,1)",org.opendaylight.controller.hosttracker,org.opendayl
+ ight.controller.sal.flowprogrammer;version="[0.8,1)",org.opendaylight.c
+ ontroller.sal.utils;version="[0.8,1)",org.opendaylight.controller.clust
+ ering.services,org.opendaylight.controller.switchmanager;version="[0.7,
+ 1)",org.opendaylight.controller.forwardingrulesmanager,org.opendaylight
+ .controller.sal.match;version="[0.8,1)",org.opendaylight.controller.sal
+ .routing;version="[0.8,1)",org.opendaylight.controller.sal.action;versi
+ on="[0.8,1)",org.opendaylight.controller.topologymanager,org.apache.com
+ mons.lang3.builder;version="[3.1,4)",org.junit;resolution:=optional
+Tool: Bnd-2.1.0.20130426-122213

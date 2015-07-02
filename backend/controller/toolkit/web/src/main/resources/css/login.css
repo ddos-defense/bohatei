@@ -1,0 +1,51 @@
+body {
+  background: #eee;
+}
+
+#header {
+  height: 25px;
+  background: url('/img/opendaylight.png') left center no-repeat #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  display: block;
+}
+
+#container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  margin-bottom: 100px;
+}
+
+#form {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  display: inline-block;
+  background: url('/img/logo.png') center top 10px no-repeat;
+  font-size: 0.9em;
+}
+
+#form fieldset {
+  margin-top: 220px;
+}
+
+#form fieldset input {
+  margin-right: 5px;
+  box-shadow: 0 0 50px #646464;
+}
+
+#form fieldset button {
+  box-shadow: 0 0 50px #646464;
+}

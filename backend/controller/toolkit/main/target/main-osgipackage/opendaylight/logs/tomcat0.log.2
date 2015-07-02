@@ -1,0 +1,220 @@
+2014-08-29 12:01:27 EDT [org.apache.catalina.startup.Catalina] INFO org.apache.catalina.startup.Catalina addClusterRuleSet Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+2014-08-29 12:01:27 EDT [org.apache.catalina.startup.Catalina] INFO org.apache.catalina.startup.Catalina addClusterRuleSet Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+2014-08-29 12:01:29 EDT [org.apache.catalina.core.AprLifecycleListener] INFO org.apache.catalina.core.AprLifecycleListener init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+2014-08-29 12:01:30 EDT [org.apache.coyote.http11.Http11Protocol] INFO org.apache.coyote.AbstractProtocol init Initializing ProtocolHandler ["http-bio-8080"]
+2014-08-29 12:01:30 EDT [org.apache.coyote.http11.Http11Protocol] SEVERE org.apache.coyote.AbstractProtocol init Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 29 more
+
+2014-08-29 12:01:30 EDT [org.apache.catalina.core.StandardService] SEVERE org.apache.catalina.core.StandardService initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 24 more
+Caused by: java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 25 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 29 more
+
+2014-08-29 12:01:30 EDT [org.apache.catalina.mbeans.GlobalResourcesLifecycleListener] SEVERE org.apache.catalina.mbeans.GlobalResourcesLifecycleListener createMBeans No global naming context defined for server
+2014-08-29 12:01:30 EDT [org.apache.catalina.core.StandardService] INFO org.apache.catalina.core.StandardService startInternal Starting service Catalina
+2014-08-29 12:01:30 EDT [org.apache.catalina.core.StandardEngine] INFO org.apache.catalina.core.StandardEngine startInternal Starting Servlet Engine: Apache Tomcat/7.0.32
+2014-08-29 12:01:43 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:44 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:46 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:46 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:49 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:49 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:51 EDT [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/]] INFO org.apache.catalina.core.ApplicationContext log No Spring WebApplicationInitializer types detected on classpath
+2014-08-29 12:01:51 EDT [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/]] INFO org.apache.catalina.core.ApplicationContext log Initializing Spring FrameworkServlet 'RootGUI'
+2014-08-29 12:01:54 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:54 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:57 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:57 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:59 EDT [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/flowtags]] INFO org.apache.catalina.core.ApplicationContext log No Spring WebApplicationInitializer types detected on classpath
+2014-08-29 12:01:59 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:01:59 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:01:59 EDT [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/flowtags]] INFO org.apache.catalina.core.ApplicationContext log Initializing Spring FrameworkServlet 'AppWeb'
+2014-08-29 12:02:00 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:00 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:02:02 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:02 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.containermanager.northbound.ContainerManagerNorthboundRSApplication
+2014-08-29 12:02:03 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:03 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:02:04 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:04 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:02:06 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:06 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:02:06 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:02:06 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:03:16 EDT [org.apache.catalina.startup.Catalina] INFO org.apache.catalina.startup.Catalina addClusterRuleSet Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+2014-08-29 12:03:16 EDT [org.apache.catalina.startup.Catalina] INFO org.apache.catalina.startup.Catalina addClusterRuleSet Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+2014-08-29 12:03:19 EDT [org.apache.catalina.core.AprLifecycleListener] INFO org.apache.catalina.core.AprLifecycleListener init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+2014-08-29 12:03:21 EDT [org.apache.coyote.http11.Http11Protocol] INFO org.apache.coyote.AbstractProtocol init Initializing ProtocolHandler ["http-bio-8080"]
+2014-08-29 12:03:21 EDT [org.apache.coyote.http11.Http11Protocol] SEVERE org.apache.coyote.AbstractProtocol init Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:1175)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:1153)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.processAllBundles(DirectoryWatcher.java:1146)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:456)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.run(DirectoryWatcher.java:263)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 25 more
+
+2014-08-29 12:03:21 EDT [org.apache.catalina.core.StandardService] SEVERE org.apache.catalina.core.StandardService initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.eclipse.gemini.web.tomcat.internal.OsgiAwareEmbeddedTomcat.init(OsgiAwareEmbeddedTomcat.java:197)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.<init>(TomcatServletContainer.java:62)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainerFactory.createContainer(TomcatServletContainerFactory.java:29)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.createContainer(Activator.java:107)
+	at org.eclipse.gemini.web.tomcat.internal.Activator.start(Activator.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:1175)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:1153)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.processAllBundles(DirectoryWatcher.java:1146)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.process(DirectoryWatcher.java:456)
+	at org.apache.felix.fileinstall.internal.DirectoryWatcher.run(DirectoryWatcher.java:263)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 20 more
+Caused by: java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 21 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 25 more
+
+2014-08-29 12:03:21 EDT [org.apache.catalina.mbeans.GlobalResourcesLifecycleListener] SEVERE org.apache.catalina.mbeans.GlobalResourcesLifecycleListener createMBeans No global naming context defined for server
+2014-08-29 12:03:21 EDT [org.apache.catalina.core.StandardService] INFO org.apache.catalina.core.StandardService startInternal Starting service Catalina
+2014-08-29 12:03:21 EDT [org.apache.catalina.core.StandardEngine] INFO org.apache.catalina.core.StandardEngine startInternal Starting Servlet Engine: Apache Tomcat/7.0.32
+2014-08-29 12:03:32 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:03:32 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:03:33 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:03:33 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication
+2014-08-29 12:03:35 EDT [com.sun.jersey.server.impl.application.WebApplicationImpl] INFO com.sun.jersey.server.impl.application.WebApplicationImpl _initiate Initiating Jersey application, version 'Jersey: 1.17 01/17/2013 03:31 PM'
+2014-08-29 12:03:35 EDT [com.sun.jersey.server.impl.application.DeferredResourceConfig] INFO com.sun.jersey.server.impl.application.DeferredResourceConfig$ApplicationHolder <init> Instantiated the Application class org.opendaylight.controller.northbound.commons.NorthboundApplication

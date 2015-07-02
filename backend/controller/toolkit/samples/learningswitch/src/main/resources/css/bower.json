@@ -1,0 +1,7 @@
+{
+  "name" : "OpenDaylight Phoenix External CSS",
+  "version" : "0.0.1",
+  "dependencies" : {
+    "pure" : "v0.4.2"
+  }
+}

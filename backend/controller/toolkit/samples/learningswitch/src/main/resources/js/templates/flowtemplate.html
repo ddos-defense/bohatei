@@ -1,0 +1,24 @@
+<script type="text/template" id="flowContainer">
+  <div id="flowDiv" style="margin-left:20px; margin-right: 100px; float: left;">
+
+<h4>Programmed flows</h4>    
+     
+    <% _.each(flowdata, function(flowdata1) { %>
+<h5>Flows for <%= flowdata1.attributes.node %> </h5>
+<table id="programmedFlowTablefor<%= flowdata1.attributes.node %>" class="pure-table pure-table-bordered">
+   <thead>
+      <tr>
+         <th>Flow</th>
+      </tr>
+   </thead>
+   <tbody>
+      <% _.each(flowdata1.attributes.flows, function(flow) { %>
+      <tr>
+         <td><%= flow %></td>
+      </tr>
+      <% }); %>
+   </tbody>
+</table>
+<% }); %>
+</div>
+</script>

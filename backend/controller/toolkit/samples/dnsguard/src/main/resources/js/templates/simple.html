@@ -1,0 +1,46 @@
+<script type="text/template" id="simpleContainer">
+  <div id="simpleDiv" style="margin-left:20px; float: left;">
+  
+      <h3>DNSGUARD</h3>
+	  
+      <div id="switchHubToggle">
+		<button id="toggleButton" class="pure-button button-success" onclick="handleSimpleButton(); return false;">Switch mode</button>
+      </div>
+      
+  
+  
+    <h3>Connection Application</h3>
+    <table id="simpleTable" class="pure-table pure-table-bordered">
+      <thead>
+        <tr>
+          <th>UUID</th>
+          <th>A</th>
+          <th>B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% _.each(simple, function(simpleton) { %>
+          <tr data-id="<%= simpleton.id %>">
+            <td><%= simpleton.attributes.uuid %></td>
+            <td><%= simpleton.attributes.foo %></td>
+            <td><%= simpleton.attributes.bar %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <form class="pure-form">
+      <fieldset>
+        <legend>Connection Form</legend>
+        <label for="simpleFooInput">Input A</label>
+        <input type="text" id="simpleFooInput" placeholder="Input A" />
+        <label for="simpleBarInput">Input B</label>
+        <input type="text" id="simpleBarInput" placeholder="Input B" />
+        <div id="simpleContainer">
+          <button id="simpleButton" class="pure-button button-success" onclick="return false;">Submit</button>
+          <button id="simpleRemoveButton" class="pure-button button-error" onclick="return false;">Remove</button>
+          <button class="pure-button" onclick="return false;">Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</script>

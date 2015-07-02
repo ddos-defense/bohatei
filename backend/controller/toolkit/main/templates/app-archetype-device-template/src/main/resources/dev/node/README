@@ -1,0 +1,3 @@
+ensure you install node modules (npm install <module>)
+`node server.js`
+go to <your-ip>:8000

@@ -1,0 +1,43 @@
+<script type="text/template">
+	<div id="flowsContainer" style="margin-left: 20px;">
+		<h3>Flows</h3>
+		<div id="flowsTableButtonsContainer" style="margin-bottom: 10px;">
+			<button id="createFlowButton" class="pure-button pure-button-primary">Create
+				Flow</button>
+			<button id="editFlowButton" class="pure-button pure-button-primary">Edit
+				Flow</button>
+			<button id="deleteFlowButton" class="pure-button button-error">Delete
+				Flow</button>
+		</div>
+		<table class="pure-table pure-table-bordered">
+			<thead>
+				<tr>
+					<th>Flow Name</th>
+					<th>Node ID</th>
+					<th>Type</th>
+					<th>Install in Hardware</th>
+					<th>Ingress Port</th>
+					<th>Priority</th>
+					<th>Ether Type</th>
+					<th>Network Source</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% _.each(flows, function(flow) { %>
+				<tr data-flowName="<%= flow.name%>" style="cursor: pointer;">
+					<td><%= flow.name %></td>
+					<td><%= flow.node.id %></td>
+					<td><%= flow.node.type %></td>
+					<td><%= flow.installInHw %></td>
+					<td><%= flow.ingressPort %></td>
+					<td><%= flow.priority %></td>
+					<td><%= flow.etherType %></td>
+					<td><%= flow.nwSrc %></td>
+					<td><%= actionsMap[flow.actions.toString()] %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+	</div>
+</script>

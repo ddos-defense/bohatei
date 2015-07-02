@@ -1,0 +1,69 @@
+<script type="text/template">
+    <div id="flowFormContainer"
+        style="margin-top: 20px; margin-left: 20px; padding: 10px;">
+        <fieldset>
+            <legend><%= flowAction %> Flow</legend>
+            <table>
+                <tr>
+                    <td><label>Flow Name:</label></td>
+                    <td><input type="text" id="flowName" name="flowName" value="<%= flowModel.get('id') %>" <%= flowAction =='Edit' ? 'disabled' : '' %> ></td>
+                </tr>
+                <tr>
+                    <td><label>Node ID:</label></td>
+                    <td>
+                        <select id="nodeId" name="nodeId" value="" <%= flowAction =='Edit' ? 'disabled' : '' %> >
+                            <% _.each(devices, function(device){ %>
+                            <option <%= flowModel.get('node').id == device.node.id ? 'selected' : '' %>  > <%= device.node.id %> </option>
+                            <% }); %>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Ingress Port:</label></td>
+                    <td><input type="text" id="ingressPort" name="ingressPort"
+                        value="<%= flowModel.get('ingressPort') %>"></td>
+                </tr>
+                <tr>
+                    <td><label>Priority:</label></td>
+                    <td><input type="text" id="priority" name="priority" value="<%= flowModel.get('priority') %>"></td>
+                </tr>
+                <tr>
+                    <td><label>Ether Type:</label></td>
+                    <td><input type="text" id="etherType" name="etherType" value="<%= flowModel.get('etherType') %>"></td>
+                </tr>
+                <tr>
+                    <td><label>Network Source:</label></td>
+                    <td><input type="text" id="nwSrc" name="nwSrc" value="<%= flowModel.get('nwSrc') %>"></td>
+                </tr>
+                <tr>
+                    <td><label>Actions:</label></td>
+                    <td>
+                        <select id="actions" name="actions">
+<option value="DROP">Drop</option>
+<option value="LOOPBACK">Loopback</option>
+<option value="FLOOD">Flood</option>
+<option value="SW_PATH">Software Path</option>
+<option value="HW_PATH">Hardware Path</option>
+<option value="CONTROLLER">Controller</option>
+<option value="OUTPUT">Add Output Ports</option>
+<option value="SET_VLAN_ID">Set VLAN ID</option>
+<option value="SET_VLAN_PCP">Set VLAN Priority</option>
+<option value="POP_VLAN">Strip VLAN Header</option>
+<option value="SET_DL_SRC">Modify Datalayer Source Address</option>
+<option value="SET_DL_DST">Modify Datalayer Destination Address</option>
+<option value="SET_NW_SRC">Modify Network Source Address</option>
+<option value="SET_NW_DST">Modify Network Destination Address</option>
+<option value="SET_NW_TOS">Modify ToS Bits</option>
+<option value="SET_TP_SRC">Modify Transport Source Port</option>
+<option value="SET_TP_DST">Modify Transport Destination Port</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div id="flowFormButtonsContainer" style="margin-top:10px;">
+            <button id="saveFlowButton" class="pure-button button-success">Save</button>
+            <button id="cancelFlowButton" class="pure-button">Cancel</button>
+        </div>
+    </div>
+</script>

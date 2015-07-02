@@ -1,0 +1,7 @@
+archetype-app-simple : o
+archetype-app-device : x
+archetype-app-flow: x
+archetype-app : x
+archetype-add-northbound: x
+archetype-app-web : x
+archetype-app-web-topology : x

@@ -1,0 +1,18 @@
+{
+  "name": "toolkit-node",
+  "version": "0.0.1",
+  "description": "Stage app for web development",
+  "author": "Andrew Kim <h.andrew.kim@gmail.com>",
+  "contributors": [{
+    "name": "Anirudh Ramachandran",
+    "email": "anirudhvr@gmail.com"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "https://git.opendaylight.org/gerrit/gitweb?p=toolkit.git;a=summary"
+  },
+  "dependencies": {
+    "http": ">= 0.0.0",
+    "mime": ">= 1.2.11"
+  }
+}

@@ -1,0 +1,52 @@
+!SESSION 2015-06-30 15:34:21.372 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -console -consoleLog
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-30 15:34:22.060
+!MESSAGE Bundle reference:file:../lib/logging.bridge-0.4.1-SNAPSHOT@1:start not found.
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-30 15:34:50.924
+!MESSAGE 
+!STACK 0
+java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at org.eclipse.osgi.storagemanager.ManagedOutputStream.write(ManagedOutputStream.java:100)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.DataOutputStream.writeUTF(DataOutputStream.java:401)
+	at java.io.DataOutputStream.writeUTF(DataOutputStream.java:323)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveBaseData(BaseStorage.java:977)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveBundleDatas(BaseStorage.java:595)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:461)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage$StateSaver.run(BaseStorage.java:1306)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-30 15:34:51.017
+!MESSAGE 
+!STACK 0
+java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at java.io.DataOutputStream.writeUTF(DataOutputStream.java:401)
+	at java.io.DataOutputStream.writeUTF(DataOutputStream.java:323)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeStringOrNull(StateWriter.java:701)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeList(StateWriter.java:590)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeMap(StateWriter.java:476)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeExportPackageDesc(StateWriter.java:374)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeBundleDescriptionLazyData(StateWriter.java:243)
+	at org.eclipse.osgi.internal.resolver.StateWriter.saveState(StateWriter.java:113)
+	at org.eclipse.osgi.internal.resolver.StateObjectFactoryImpl.writeState(StateObjectFactoryImpl.java:505)
+	at org.eclipse.osgi.internal.baseadaptor.StateManager.writeState(StateManager.java:178)
+	at org.eclipse.osgi.internal.baseadaptor.StateManager.update(StateManager.java:116)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveStateData(BaseStorage.java:665)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage$StateSaver.run(BaseStorage.java:1306)
+	at java.lang.Thread.run(Thread.java:745)

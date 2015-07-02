@@ -1,0 +1,36 @@
+<script type="text/template" id="simpleContainer">
+  <div id="simpleDiv" style="margin-left:20px; margin-right:100px; float: left;">
+    <h3>Learning Switch </h3>
+    
+    <h4>Mac -> Port Table</h4>
+    <table id="simpleTable" class="pure-table pure-table-bordered">
+      <thead>
+        <tr>
+          <th>MAC Address</th>
+          <th>Port ID</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% _.each(simple, function(simpleton) { %>
+          <tr data-id="<%= simpleton.mac %>">
+            <td><%= simpleton.attributes.mac %></td>
+            <td><%= simpleton.attributes.connector %></td>
+            <td><button id="removeMacPortEntry" class="pure-button button-error" onclick="return false;">Remove</button></td>
+          </tr>
+        <% }); %>
+          <tr>
+              <td><input type="text" id="macInput" placeholder="Mac addr, like 00:00:72:41:4c:e6:c2:01" /></td>
+              <td><input type="text" id="ncInput" placeholder="Port info, like OF|1@OF|00:00:00:00:00:00:00:01" /></td>
+              <td><button id="addMacPortEntry" class="pure-button button-success" onclick="return false;">Add</button></td>
+          </tr>
+        
+      </tbody>
+    </table>
+   
+ </div>
+  
+  
+  
+  
+</script>

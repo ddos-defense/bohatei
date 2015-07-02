@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.opendaylight.toolkit</groupId>
+    <artifactId>common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../common</relativePath>
+  </parent>
+
+  <artifactId>flowtags</artifactId>
+  <groupId>org.sdnhub</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>${bundle.plugin.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Import-Package>
+              com.google.gson,
+              org.opendaylight.toolkit.web,
+              org.opendaylight.controller.sal.action,
+              org.opendaylight.controller.sal.authorization,
+              org.opendaylight.controller.sal.core,
+              org.opendaylight.controller.sal.connection,
+              org.opendaylight.controller.sal.discovery,
+              org.opendaylight.controller.sal.flowprogrammer,
+              org.opendaylight.controller.sal.inventory,
+              org.opendaylight.controller.sal.match,
+              org.opendaylight.controller.sal.packet,
+              org.opendaylight.controller.sal.routing,
+              org.opendaylight.controller.sal.utils,
+              
+              org.opendaylight.controller.forwardingrulesmanager,
+              org.opendaylight.controller.hosttracker,
+              org.opendaylight.controller.hosttracker.hostAware,
+              org.opendaylight.controller.switchmanager,
+              org.opendaylight.controller.clustering.services,
+  
+              org.opendaylight.controller.northbound.commons,
+              org.opendaylight.controller.northbound.commons.exception,
+              org.opendaylight.controller.northbound.commons.utils,
+              
+              <!--  org.opendaylight.controller.protocol_plugin.openflow.core,  -->
+              
+              org.opendaylight.controller.topologymanager,
+              org.apache.commons.lang3.builder,
+              org.junit;resolution:=optional,
+              org.slf4j,
+              org.apache.felix.dm,
+              
+              <!--  copy from learningswitch  -->
+              
+              javax.annotation,
+              javax.naming,
+              javax.servlet,
+              javax.servlet.annotation,
+              javax.servlet.http,
+              javax.servlet.jsp,
+              javax.servlet.jsp.el,
+              javax.servlet.jsp.jstl.core,
+              javax.servlet.jsp.jstl.fmt,
+              javax.servlet.jsp.jstl.tlv,
+              javax.servlet.jsp.tagext,
+              javax.servlet.resources,
+              javax.xml.parsers,
+              javax.xml.transform,
+              javax.xml.bind,
+              javax.xml.bind.annotation,
+              javax.ws.rs,
+              javax.ws.rs.core,
+              
+              org.apache.catalina.filters,
+              com.sun.jersey.spi.container.servlet,
+              com.fasterxml.jackson.annotation,
+              com.fasterxml.jackson.jaxrs.base,
+              com.fasterxml.jackson.jaxrs.json,
+              !org.codehaus.enunciate.jaxrs,
+              
+              org.springframework.beans,
+              org.springframework.beans.factory.xml,
+              org.springframework.context.config,
+              org.springframework.stereotype,
+              org.springframework.ui,
+              org.springframework.web,
+              org.springframework.web.bind.annotation,
+              org.springframework.web.servlet,
+              org.springframework.web.servlet.config,
+              org.springframework.web.servlet.view,
+              org.springframework.web.filter,
+              org.springframework.web.context,
+              
+              org.apache.commons.logging,
+              org.apache.taglibs.standard.functions,
+              org.apache.taglibs.standard.resources,
+              org.apache.taglibs.standard.tag.common.core,
+              org.apache.taglibs.standard.tag.common.fmt,
+              org.apache.taglibs.standard.tag.rt.core,
+              org.apache.taglibs.standard.tag.rt.fmt,
+              org.apache.taglibs.standard.tei,
+              org.apache.taglibs.standard.tlv,
+              org.osgi.framework
+            </Import-Package>
+            <Export-Package></Export-Package>
+            <Web-ContextPath>/flowtags</Web-ContextPath>
+            <Jaxrs-Resources>,${classes;ANNOTATION;javax.ws.rs.Path}</Jaxrs-Resources>
+            <Bundle-Activator>
+              org.sdnhub.flowtags.internal.Activator
+            </Bundle-Activator>
+          </instructions>
+          <manifestLocation>${project.basedir}/src/main/resources/META-INF</manifestLocation>
+          <buildDirectory>../main/target/main-osgipackage/opendaylight/plugins/</buildDirectory> <!-- TODO use pom var -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.opendaylight.toolkit</groupId>
+      <artifactId>web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>clustering.services</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>sal</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>hosttracker</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>protocol_plugins.openflow</artifactId>
+    </dependency>
+  <dependency>
+    <groupId>org.opendaylight.controller.thirdparty</groupId>
+    <artifactId>org.openflow.openflowj</artifactId>
+  </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.enunciate</groupId>
+      <artifactId>enunciate-core-annotations</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>commons.northbound</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.controller</groupId>
+      <artifactId>switchmanager</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+    </dependency>
+  </dependencies>
+  <properties>
+    <checkstyle.skip>true</checkstyle.skip>
+  </properties>
+</project>
+

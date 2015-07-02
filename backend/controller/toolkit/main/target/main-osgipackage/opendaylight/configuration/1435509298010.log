@@ -1,0 +1,9 @@
+!SESSION 2015-06-28 10:34:57.564 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -console -consoleLog
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-28 10:34:58.253
+!MESSAGE Bundle reference:file:../lib/logging.bridge-0.4.1-SNAPSHOT@1:start not found.

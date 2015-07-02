@@ -1,0 +1,23 @@
+/* pure */
+
+.arc path {
+  stroke: #fff;
+}
+
+/* border: 1px solid black; */
+
+/* http://designshack.net/articles/css/how-to-center-anything-with-css/ */
+
+#main {width: 85%; margin: 0 auto 0 auto}
+#localdns {margin-top: 50px; margin-bottom: 50px;}
+#leftsection { width: 50%; float: left}
+#rightsection { width: 50%; float: right}
+
+#bottomsection {margin-top: 30px; float: left}
+
+.internal-centeredsection
+{ 
+	margin-left:auto;
+	margin-right:auto;
+	width:90%; 
+}

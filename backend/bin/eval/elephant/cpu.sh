@@ -1,0 +1,43 @@
+#!/bin/sh
+
+
+virsh vcpupin host1 0 0
+virsh vcpupin host2 0 1
+virsh vcpupin host3 0 2
+virsh vcpupin host4 0 3
+virsh vcpupin host5 0 4
+virsh vcpupin host6 0 5
+virsh vcpupin host7 0 6
+virsh vcpupin host8 0 7
+virsh vcpupin host9 0 8
+virsh vcpupin host10 0 9 
+virsh vcpupin host11 0 10
+virsh vcpupin host12 0 11
+virsh vcpupin host13 0 12
+virsh vcpupin host14 0 13
+virsh vcpupin host15 0 14
+virsh vcpupin host16 0 15
+virsh vcpupin host17 0 16
+virsh vcpupin host18 0 17
+virsh vcpupin host19 0 18
+virsh vcpupin host20 0 19
+virsh vcpupin host81 0 20
+virsh vcpupin host82 0 21
+virsh vcpupin host83 0 22
+virsh vcpupin host84 0 23
+virsh vcpupin host85 0 24
+virsh vcpupin host86 0 25
+virsh vcpupin host87 0 26
+virsh vcpupin host88 0 27
+virsh vcpupin host89 0 28
+virsh vcpupin host90 0 29
+virsh vcpupin host91 0 30
+virsh vcpupin host92 0 31
+virsh vcpupin host93 0 32
+virsh vcpupin host94 0 33
+virsh vcpupin host95 0 34
+virsh vcpupin host96 0 35
+virsh vcpupin host97 0 36
+virsh vcpupin host98 0 37
+virsh vcpupin host99 0 38
+virsh vcpupin host201 0 39

@@ -1,0 +1,39 @@
+/* pure */
+.selected {
+  background: #F3F781
+}
+
+.button-success,
+.button-error {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+fieldset {
+}
+
+fieldset > label {
+  display: block;
+}
+
+fieldset > input {
+  width: 100%;
+}
+
+#simpleContainer {
+  margin-top: 15px;
+}

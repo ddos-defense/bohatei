@@ -1,0 +1,15 @@
+{
+  "name": "toolkit-provision",
+  "version": "0.0.1",
+  "description": "Provision workspace to allow for CORS filter",
+  "author": "Andrew Kim <h.andrew.kim@gmail.com>",
+  "contributors": [{
+  }],
+  "repository": {
+    "type": "git",
+    "url": "https://git.opendaylight.org/gerrit/gitweb?p=toolkit.git;a=summary"
+  },
+  "dependencies": {
+    "shelljs": ">= 0.3.0"
+  }
+}

@@ -1,0 +1,32 @@
+!SESSION 2015-06-27 08:47:40.387 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -console -consoleLog
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-27 08:47:41.015
+!MESSAGE Bundle reference:file:../lib/logging.bridge-0.4.1-SNAPSHOT@1:start not found.
+
+!ENTRY org.eclipse.osgi 4 0 2015-06-27 08:48:12.385
+!MESSAGE 
+!STACK 0
+java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:95)
+	at java.io.DataOutputStream.writeInt(DataOutputStream.java:197)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeVersion(StateWriter.java:652)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeVersionRange(StateWriter.java:662)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeVersionConstraint(StateWriter.java:641)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeImportPackageSpec(StateWriter.java:602)
+	at org.eclipse.osgi.internal.resolver.StateWriter.writeBundleDescriptionLazyData(StateWriter.java:248)
+	at org.eclipse.osgi.internal.resolver.StateWriter.saveState(StateWriter.java:113)
+	at org.eclipse.osgi.internal.resolver.StateObjectFactoryImpl.writeState(StateObjectFactoryImpl.java:505)
+	at org.eclipse.osgi.internal.baseadaptor.StateManager.writeState(StateManager.java:178)
+	at org.eclipse.osgi.internal.baseadaptor.StateManager.update(StateManager.java:116)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveStateData(BaseStorage.java:665)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage$StateSaver.run(BaseStorage.java:1306)
+	at java.lang.Thread.run(Thread.java:745)

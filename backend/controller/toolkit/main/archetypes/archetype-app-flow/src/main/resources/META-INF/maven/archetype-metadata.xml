@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="device"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java/</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.jsp</include>
+        <include>**/*.xml</include>
+        <include>**/*.html</include>
+        <include>**/*.txt</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources/js</directory>
+      <includes>
+        <include>**/*.js</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.</include>
+        <include>**/*.schemas</include>
+        <include>**/*.bowerrc</include>
+        <include>**/*.js</include>
+        <include>**/*.ico</include>
+        <include>**/*.editorconfig</include>
+        <include>**/*.tooling</include>
+        <include>**/*.sh</include>
+        <include>**/*.factories</include>
+        <include>**/*.npmignore</include>
+        <include>**/*.handlers</include>
+        <include>**/*.png</include>
+        <include>**/*.md</include>
+        <include>**/*.json</include>
+        <include>**/*.map</include>
+        <include>**/*.types</include>
+        <include>**/*.gitignore</include>
+        <include>**/*.css</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.settings</directory>
+      <includes>
+        <include>**/*.prefs</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.classpath</include>
+        <include>.project</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.checkstyle</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <requiredProperties>
+      <requiredProperty key="REST-Resource-Name"/>
+  </requiredProperties>
+</archetype-descriptor>

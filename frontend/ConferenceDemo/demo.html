@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
+	<link href="demo.css" rel="stylesheet" />
+	<meta charset=utf-8 />
+	<title>Bohatei Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+    <script src="demo.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="~/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="~/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script> 
+</head>
+<body>
+<div id="header"> 
+	<h1>Bohatei</h1>
+</div>
+
+<div id="graph"> 
+	<div id="cy"></div>
+	<!-- div id="cy2"></div -->
+</div>
+
+<div id="input">
+	<h2>Topology</h2>
+		<input type="file" id="files"/>
+		
+	<h2 id="syn_header"> SYN Flood </h2>
+	<form class="pure-form syn_flood_form" id="syn_form">
+	<p>
+		<!-- input class="sflood_attack_fields" type="text" name="ingress" placeholder="Ingress" id="sflood_attack-0" /-->
+		<input class="sflood_attack_fields" type="text" name="volume" placeholder="Volume (Low or High)" id="sflood_attack-1"/>
+		
+    </p>
+	<p>
+        <!--button type="button" class="add pure-button syn_flood_form_btn" id="yolo"> Add more </button-->
+
+        <input type="submit" class="add pure-button" value="Send SYN Flood" >
+	</p>
+	</form>
+	
+	<h2 id="udp_header"> UDP Flood </h2>	
+	<form class="pure-form udp_flood_form" id="udp_form">
+	<p>
+		<!-- input class="uflood_attack_fields" type="text" name="ingress" placeholder="Ingress" id="uflood_attack-0" /-->
+		<input class="uflood_attack_fields" type="text" name="volume" placeholder="Volume (Low or High)" id="uflood_attack-1"/>
+		
+	</p>
+    <p>
+        <input type="submit" class="add pure-button" value="Send UDP Flood" >
+		<!-- button type="button" class="add pure-button udp_flood_form_btn"> Add more </button -->
+	</p>
+	</form>
+     
+	<h2> DNS Amp </h2>	
+	<form class="pure-form dns_amp_form" id="dns_form">
+	<p>
+		<!-- input class="damp_attack_fields" type="text" name="ingress" placeholder="Ingress" id="damp_attack-0"/ -->
+		<input class="damp_attack_fields" type="text" name="volume" placeholder="Volume (Low or High)" id="damp_attack-1"/>
+		
+	</p>
+    <p>
+        <input type="submit" class="add pure-button" value="Send DNS Amplification" >
+		<!-- button type="button" class="add pure-button dns_amp_form_btn"> Add more </button -->
+	</p>
+	</form>
+    
+	<h2 id="ele_header"> Elephant Flow </h2>	
+	<form class="pure-form elephant_form" id="ele_form">
+	<p>
+		<!-- input class="ele_attack_fields" type="text" name="ingress" placeholder="Ingress" id="ele_attack-0" / -->
+		<input class="ele_attack_fields" type="text" name="volume" placeholder="Volume (Low or High)" id="ele_attack-1"/>
+		
+	</p>
+    <p>
+        <input type="submit" class="add pure-button" value="Send Elephant Flow" >
+		<!-- button type="button" class="add pure-button elephant_form_btn"> Add more </button -->
+	</p>
+	</form>
+    
+    <!-- button type="button" id="attack_submit" class="pure-button pure-button-active"> Submit !</button -->
+    <button type="button" class="add pure-button" id="yolo"> Clear </button>
+</div>
+<div id="graphs">
+    <ul></ul>
+</div>
+
+	
+</body>
+</html>

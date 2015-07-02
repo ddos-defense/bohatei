@@ -1,0 +1,107 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+	font: 36px sans-serif, helvetica neue, helvetica, arial;
+	color: #eeefef;
+}
+
+h2 {
+	font: sans-serif;
+	/*font-size:12px;*/
+}
+#header {
+	position:absolute;
+	height:10%;
+	width:100%;
+	background-color: #015976; 
+	margin:0;
+	top:0px;
+	left:0px;
+}
+
+#input {
+	position:absolute;
+	/*overflow-y:scroll;*/
+	height:90%;
+	width : 20%;
+	top: 10%;
+	left:0;
+	/*border-right: 5px solid #ccc;*/
+}
+
+#graph {
+	position:absolute;
+	height:70%;
+	width:80%;
+	top:10%;
+	left:20%;
+}
+
+#cy {
+	position : absolute;
+	height:100%;
+	width: 100%;/*70%*/;
+	top:0%;
+	left: 0%;/*20%; */
+	/*border-left: 3px solid #ccc;*/
+}
+	
+/*#cy2{
+	position : absolute;
+	height:100%;
+	width:20%;
+	top:0%;
+	left:0%;
+	border-top: 3px solid #ccc;
+}
+*/
+input {
+	display:block; 
+	width:80%;
+	padding:0;
+	/*border-width:1px solid #ccc;*/
+}
+
+
+#graphs {
+	position : absolute;
+    height:20%;
+	width : 80%;
+	top:80%;
+	left: 20%;
+	/*border-top: 5px solid #ccc;
+	border-left: 5px solid #ccc;*/
+    /*overflow-y:scroll; 
+    overflow-x:scroll;*/
+}
+
+.graph {
+    width: 25%; 
+    height:100%;
+}
+
+ul {
+    height:100%;
+    width:100%;
+    list-style-type:none;
+}
+
+li {
+    display:inline;
+}
+
+#syn_header {
+    color:red;
+}
+
+#udp_header {
+    color:orange;
+}
+
+#ele_header {
+    color:purple;
+}

@@ -1,0 +1,42 @@
+!SESSION 2014-08-25 13:27:06.555 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -console -consoleLog
+
+!ENTRY org.eclipse.osgi 4 0 2014-08-25 13:27:08.099
+!MESSAGE Bundle reference:file:../lib/logging.bridge-0.4.1-SNAPSHOT@1:start not found.
+
+!ENTRY org.sdnhub.flowtags 4 0 2014-08-25 15:15:34.321
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.io.IOException: Exception in opening zip file: /home/yoshiaki/opendaylight/toolkit/main/target/main-osgipackage/opendaylight/configuration/org.eclipse.osgi/bundles/62/1/bundlefile
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:291)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.basicOpen(ZipBundleFile.java:87)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getZipFile(ZipBundleFile.java:100)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.checkedOpen(ZipBundleFile.java:73)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getEntry(ZipBundleFile.java:245)
+	at org.eclipse.virgo.kernel.equinox.extensions.hooks.ExtendedBundleFileWrapperFactoryHook$FileResourceEnforcingBundleFile.getEntry(ExtendedBundleFileWrapperFactoryHook.java:83)
+	at org.eclipse.osgi.baseadaptor.bundlefile.BundleFileWrapperChain.getEntry(BundleFileWrapperChain.java:43)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:542)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:492)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:465)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.sdnhub.flowtags.Flowtags.handleNewConnection(Flowtags.java:192)
+	at org.sdnhub.flowtags.Flowtags.access$600(Flowtags.java:48)
+	at org.sdnhub.flowtags.Flowtags$1.run(Flowtags.java:158)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/yoshiaki/opendaylight/toolkit/main/target/main-osgipackage/opendaylight/configuration/org.eclipse.osgi/bundles/62/1/bundlefile (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:159)
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:274)
+	... 20 more
