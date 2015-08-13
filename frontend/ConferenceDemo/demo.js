@@ -7,29 +7,6 @@ $(function(){
 
 	document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
-    $('#ele').click(function() {
-       alert('lala'); 
-       $('#ele').fancybox();     
-    });	
-    $('#yolo').click(function() {
-        /*visualize_dns();
-        visualize_syn();
-        visualize_udp();
-        visualize_ele();*/
-        
-        var loaderInterval = setInterval(function() {
-            $.get('load_ele.php', function(data) {
-                //alert(data);
-                if (data.trim() == "YES") {
-                    //$("<li/>").appendTo("#graphs ul").html('<img class="graph" src="output.png">'); 
-                    $('<li id="ele"/>').appendTo("#graphs ul").html('<img class="graph" id="ele" src="ele_output.png">');
-                    //$("#graphs").html('<img src="output.png">');
-                    clearInterval(loaderInterval);
-                }         
-            });
-        } ,1000); 
-        return false; 
-    }); 
     $('#syn_form').submit(function() {
         visualize_syn();
         $.post("action.php",{attack: "syn_flood"}, function(reply) { 

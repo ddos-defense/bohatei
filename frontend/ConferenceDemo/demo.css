@@ -44,26 +44,16 @@ h2 {
 #cy {
 	position : absolute;
 	height:100%;
-	width: 100%;/*70%*/;
+	width: 100%;
 	top:0%;
-	left: 0%;/*20%; */
-	/*border-left: 3px solid #ccc;*/
+	left: 0%;
+
 }
 	
-/*#cy2{
-	position : absolute;
-	height:100%;
-	width:20%;
-	top:0%;
-	left:0%;
-	border-top: 3px solid #ccc;
-}
-*/
 input {
 	display:block; 
 	width:80%;
 	padding:0;
-	/*border-width:1px solid #ccc;*/
 }
 
 
@@ -73,10 +63,6 @@ input {
 	width : 80%;
 	top:80%;
 	left: 20%;
-	/*border-top: 5px solid #ccc;
-	border-left: 5px solid #ccc;*/
-    /*overflow-y:scroll; 
-    overflow-x:scroll;*/
 }
 
 .graph {
